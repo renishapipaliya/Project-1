@@ -38,8 +38,3 @@ body.dark .arrow {
 body.dark .arrow:before {
   border-right-color: #333;
 }
-
-body.dark {
-  
-  background-color: black;
-}

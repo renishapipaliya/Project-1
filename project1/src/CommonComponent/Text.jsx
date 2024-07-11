@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-const Text = ({title}) => {
+const Text = ({children,className}) => {
   return (
     <h1 
-      class='text-gray-800  dark:bg-[#151515] dark:text-gray-200  font-semibold  '>
-        {title}
+      className={className}>
+        {children}
     </h1>
   )
 }

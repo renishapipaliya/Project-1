@@ -27,7 +27,13 @@ const DialogBox = ({ isOpen, onClose }) => {
                     </div>
 
                     <div className='flex font-semibold justify-center'>
-                        <Text title={"Pago rechazado"} />
+                       
+                        <Text
+                            className={
+                                "text-gray-800  dark:bg-[#151515] dark:text-gray-200  font-semibold "
+                            }
+                        >
+                            Pago rechazado</Text>
                     </div>
 
                     <div className=' flex justify-center items-center py-5 flex-col text-gray-600 font-serif mt-6 dark:text-white'>
@@ -36,7 +42,12 @@ const DialogBox = ({ isOpen, onClose }) => {
                     </div>
 
                     <div className='flex justify-center my-5'>
-                        <Button title={"Save"} onClick={notify} />
+                        <Button onClick={notify}
+                            
+                            className={"px-6  py-2 rounded-lg text-white hover:text-white dark:hover:border-blue-600 border-blue-600 border hover:bg-blue-600 dark:border-secondary"} >
+                                Save
+
+                        </Button>
                     </div>
                 </div>
             </div>

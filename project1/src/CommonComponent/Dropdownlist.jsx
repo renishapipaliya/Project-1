@@ -48,7 +48,7 @@ const Dropdownlist = ({ options = [], multiple, selectedOptions, setSelectedOpti
                 readOnly
                 value={selectedLabels || 'Select options'}
                 onClick={toggleDropdown}
-                className="bg-white border w-[27vw]  dark:bg-[#333333] dark:text-gray-200 border-gray-300 dark:border-gray-500 rounded-[9px] h-[41px] text-gray-700 px-2 inline-flex items-center justify-between "
+                className="bg-white border w-[27vw]  dark:bg-[#333333] dark:text-gray-200 outline-none border-gray-300 dark:border-gray-500 rounded-[9px] h-[44px] text-gray-700 px-2 inline-flex items-center justify-between "
             />
             {isOpen ? (
                 < IoIosArrowUp onClick={toggleDropdown} className="absolute flex justify-end left-80 top-2/4 transform -translate-y-2/4 text-gray-500 dark:text-gray-200" />
