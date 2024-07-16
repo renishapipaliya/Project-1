@@ -48,20 +48,20 @@ const Dropdownlist = ({ options = [], multiple, selectedOptions, setSelectedOpti
                 readOnly
                 value={selectedLabels || 'Select options'}
                 onClick={toggleDropdown}
-                className="bg-white border w-[27vw]  dark:bg-[#333333] dark:text-gray-200 outline-none border-gray-300 dark:border-gray-500 rounded-[9px] h-[44px] text-gray-700 px-2 inline-flex items-center justify-between "
+                className="bg-white border w-[27vw] dark:border-none  dark:bg-[#333333] dark:text-gray-400  outline-none border-gray-300   rounded-[9px] h-[44px] text-gray-400 px-2 inline-flex items-center justify-between "
             />
             {isOpen ? (
                 < IoIosArrowUp onClick={toggleDropdown} className="absolute flex justify-end left-80 top-2/4 transform -translate-y-2/4 text-gray-500 dark:text-gray-200" />
             ) : (
-                    <IoIosArrowDown onClick={toggleDropdown} className="absolute flex justify-end left-80 top-2/4 transform -translate-y-2/4 text-gray-500 dark:text-gray-200" />
+                    <IoIosArrowDown onClick={toggleDropdown} className="absolute flex justify-end left-80 top-2/4 transform -translate-y-2/4 text-gray-500 dark:text-gray-500" />
             )}
 
             {isOpen && (
-                <ul className="absolute z-10 w-full bg-white dark:bg-black dark:text-gray-400 border border-gray-300 shadow-lg mt-1">
+                <ul className="absolute z-10 w-full bg-white overflow-auto dark:bg-[#151515] dark:text-gray-500 border border-gray-300 shadow-lg mt-1">
                     {options.map(option => (
                         <li
                             key={option.value}
-                            className="px-4 py-2 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700 cursor-pointer"
+                            className="px-4 py-2 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700  text-gray-500 cursor-pointer"
                             onClick={() => handleOptionChange(option.value)}
                         >
                             {multiple ? (

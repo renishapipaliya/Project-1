@@ -6,10 +6,9 @@ export default {
     extend: {
       colors: {
         dark: "#151515",
-        
       },
       textColor: {
-        primary: "#9CA3AF",
+        primary: "#6b7280",
       },
       borderColor: {
         primary: "#60636b",

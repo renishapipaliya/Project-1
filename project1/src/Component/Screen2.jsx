@@ -75,8 +75,7 @@ const Screen2 = () => {
                                     <td className='text-center p-3 border-b border-slate-300 dark:border-b dark:border-slate-600'>
                                         <Switch
                                             isActive={user.active}
-                                            onToggle={() => handleSwitchActive(index, user.id)}
-                                            index={index}
+                                            
                                         />
                                     </td>
                                 </tr>
